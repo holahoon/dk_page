@@ -1,0 +1,357 @@
+@font-face {
+  font-family: "IBMPlexSans-Bold";
+  src: url("../font/IBMPlexSans-Bold.woff");
+}
+@font-face {
+  font-family: "IBMPlexSans-Regular";
+  src: url("../font/IBMPlexSans-Regular.woff");
+}
+@font-face {
+  font-family: "IBMPlexSans-Thin";
+  src: url("../font/IBMPlexSans-Thin.woff");
+}
+
+/* === global === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+}
+a:focus {
+  outline: none;
+}
+
+.section {
+  background: radial-gradient(
+      circle closest-corner at center 100px,
+      #333333,
+      rgb(3, 3, 3) 100%
+    )
+    no-repeat;
+  height: 100vh;
+}
+
+/* === Navbar section === */
+#nav {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  padding-top: 2rem;
+  transition: padding 0.4s ease;
+  z-index: 999;
+}
+
+#nav .nav-dk {
+  padding-left: 2rem;
+  color: #8d8273;
+  font-family: "IBMPlexSans-Bold";
+  font-size: 1.9rem;
+}
+
+#nav .menu-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 1rem;
+}
+
+#nav li {
+  margin: 0 1.5rem;
+  font-family: "IBMPlexSans-Regular";
+}
+#nav .nav-masterpieces {
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #dddddd;
+}
+#nav .nav-home {
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #dddddd;
+}
+#nav .nav-contact {
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #dddddd;
+}
+
+#nav a:after {
+  content: "";
+  display: block;
+  margin-top: 5px;
+  width: 0;
+  height: 2px;
+  background: #8d8273;
+  transition: width 0.4s;
+}
+#nav a:hover::after {
+  width: 100%;
+}
+
+#nav .hamburger-container {
+  display: none;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* === Main section ==== */
+#main-section {
+  position: relative;
+}
+
+#main-section h1 {
+  /* position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, 0%); */
+  padding-top: 35vh;
+  text-align: center;
+  color: #dddddd;
+  font-size: 8rem;
+  font-weight: 900;
+  font-family: "IBMPlexSans-Bold";
+  text-transform: uppercase;
+  letter-spacing: 0;
+}
+#main-section h1 span {
+  font-size: 9rem;
+}
+
+#main-section h2 {
+  position: absolute;
+  top: 28%;
+  left: 35%;
+  transform: translate(-50%, 0%);
+  font-size: 1.1rem;
+  font-family: "IBMPlexSans-Regular";
+  letter-spacing: 3px;
+  color: #8d8273;
+}
+
+#main-section h3 {
+  position: absolute;
+  transform: translate(-50%, 0%);
+  font-size: 1.2rem;
+  font-family: "IBMPlexSans-Regular";
+  font-weight: 600;
+  letter-spacing: 3px;
+  color: #8d8273;
+}
+#main-section .position-a {
+  top: 60%;
+  left: 60%;
+}
+#main-section .position-b {
+  top: 65%;
+  left: 62%;
+}
+
+/* === Masterpieces section === */
+#masterpieces-section {
+  text-align: center;
+}
+
+.carousel-container {
+  position: relative;
+  max-width: 700px;
+  padding-top: 20vh;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.carousel-slide {
+  display: flex;
+  justify-content: initial;
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+  transition: transform 0.9s ease-in-out;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.btn {
+  color: #ffffff86;
+  font-size: 3rem;
+  cursor: pointer;
+  transition: color 0.2s ease;
+  z-index: 101;
+  -webkit-tap-highlight-color: transparent;
+}
+.btn:hover {
+  color: #ffffff;
+}
+
+.arrow-left {
+  position: absolute;
+  left: 0%;
+  top: 60%;
+}
+.arrow-right {
+  position: absolute;
+  right: 0%;
+  top: 60%;
+}
+
+.project-name {
+  display: inline-block;
+  text-align: center;
+  font-family: "IBMPlexSans-Bold";
+  font-size: 2.5rem;
+  z-index: 101;
+}
+.project-name > a {
+  color: #dddddd;
+  transition: color 0.3s ease;
+}
+.project-name > a:after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #8d8273;
+  transition: width 0.3s;
+}
+.project-name > a:hover {
+  color: #ffffff;
+}
+.project-name > a:hover::after {
+  width: 100%;
+}
+
+.project-icon-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.5rem;
+  color: #8d8273;
+  font-size: 1.5rem;
+  font-family: "IBMPlexSans-Bold";
+}
+
+.project-icon-group li {
+  color: #dddddd;
+  font-size: 2rem;
+  margin: 0 1rem;
+}
+
+.project-description {
+  color: gray;
+  font-family: "IBMPlexSans-Regular";
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: 2rem;
+  padding: 0 5rem;
+}
+
+.project-github {
+  font-size: 2rem;
+  margin-left: 2rem;
+  color: #dddddd;
+  z-index: 101;
+  transition: color 0.3s ease;
+}
+.project-github:hover {
+  color: #8d8273;
+}
+
+/* === Contact section === */
+#contact-section {
+  text-align: center;
+}
+
+#contact-section p {
+  color: #cccccc;
+  padding: 25vh 20% 5% 20%;
+  font-size: 1.3rem;
+  font-family: "IBMPlexSans-Regular";
+  text-align: justify;
+  text-indent: 4rem;
+  /* letter-spacing: 1px; */
+  /* word-spacing: 2px; */
+  line-height: 3rem;
+}
+
+#contact-section .my-email {
+  display: inline-block;
+  color: #dddddd;
+  font-size: 1.5rem;
+  font-family: "IBMPlexSans-Regular";
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 0;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  -webkit-tap-highlight-color: transparent;
+}
+#contact-section .my-email:hover {
+  color: #ffffff;
+}
+
+#contact-section p.click-email {
+  font-size: 1rem;
+  color: gray;
+  padding: 0;
+  margin: 0;
+  line-height: 2;
+  text-align: center;
+  text-indent: 0;
+}
+
+.email a {
+  color: #8d8273;
+  transition: color 0.3s ease-out;
+  border: 1px solid #8d8273;
+  background: transparent;
+  font-size: 1.3rem;
+  font-family: "IBMPlexSans-Bold";
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  padding: 1rem 4rem 1rem 2rem;
+  text-transform: uppercase;
+  display: inline-block;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.email a i {
+  color: tomato;
+  margin-right: 1rem;
+  font-size: 1.6rem;
+}
+
+.email:active {
+  outline: none;
+}
+
+.email:hover a {
+  color: #ffffff;
+  border-color: #ffffff;
+}
+
+/* === JS === */
+.project-group {
+  display: none;
+}
+/* show */
+.selected {
+  display: block;
+}
