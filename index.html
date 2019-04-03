@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    />
+    <!-- Devicon (languages icon) -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css"
+    />
+    <!-- Swiper carousel -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css"
+    />
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- Main CSS 2 -->
+    <link rel="stylesheet" href="css/styles2.css" />
+
+    <title>DK</title>
+  </head>
+  <body>
+    <nav id="nav">
+      <a href="#main-section" class="nav-dk">DK</a>
+
+      <ul class="menu-container">
+        <li>
+          <a href="#main-section" class="nav-home" onclick="hideMenu()">HOME</a>
+        </li>
+        <li>
+          <a
+            href="#masterpieces-section"
+            class="nav-masterpieces"
+            onclick="hideMenu()"
+            >MASTERPIECES</a
+          >
+        </li>
+        <li>
+          <a href="#contact-section" class="nav-contact" onclick="hideMenu()"
+            >CONTACT</a
+          >
+        </li>
+      </ul>
+      <div class="hamburger-container" onclick="openMenu(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+    </nav>
+
+    <section id="main-section" class="section">
+      <h2>I AM</h2>
+      <h1><span>D</span>avid <span>K</span>im</h1>
+      <h3 class="position-a">A FRONT END</h3>
+      <h3 class="position-b">
+        WEB DEVELOPER <span style="color: tomato">.</span>
+      </h3>
+    </section>
+
+    <section id="masterpieces-section" class="section">
+      <div class="carousel-container">
+        <div class="arrow-left btn"><i class="fas fa-chevron-left"></i></div>
+        <div class="arrow-right btn"><i class="fas fa-chevron-right"></i></div>
+
+        <div class="carousel-slide">
+          <img src="img/project1_weather_app.png" />
+          <img src="img/project2_cryptocurrency.png" />
+          <img src="img/SV302S Discovery GT350R-12.jpg" />
+          <img src="img/SV302S Discovery GT350R-8.jpg" />
+        </div>
+      </div>
+
+      <div class="project-group group1">
+        <h2 class="project-name">
+          <a
+            class="project"
+            href="https://rtdk0324.github.io/weather-app/"
+            target="_blank"
+            >Weather app</a
+          >
+        </h2>
+        <a
+          class="project-github"
+          href="https://github.com/rtdk0324/weather-app"
+          target="_blank"
+          ><i class="fab fa-github"></i
+        ></a>
+        <ul class="project-icon-group">
+          <
+          <li><i class="devicon-html5-plain-wordmark colored"></i></li>
+          <li><i class="devicon-css3-plain-wordmark colored"></i></li>
+          <li><i class="devicon-javascript-plain colored"></i></li>
+          />
+        </ul>
+        <p class="project-description">
+          Look up different weather informations of the cities in U.S.
+        </p>
+      </div>
+      <div class="project-group group2">
+        <h2 class="project-name">
+          <a
+            class="project"
+            href="https://rtdk0324.github.io/cryptocurrency-currency-conversion/"
+            target="_blank"
+            >Cryptocurreny graph</a
+          >
+        </h2>
+        <a
+          class="project-github"
+          href="https://github.com/rtdk0324/cryptocurrency-currency-conversion"
+          target="_blank"
+          ><i class="fab fa-github"></i
+        ></a>
+        <ul class="project-icon-group">
+          <
+          <li><i class="devicon-html5-plain-wordmark colored"></i></li>
+          <li><i class="devicon-css3-plain-wordmark colored"></i></li>
+          <li><i class="devicon-javascript-plain colored"></i></li>
+          <li><i class="devicon-d3js-plain colored"></i></li>
+          />
+        </ul>
+        <p class="project-description">
+          project 2 description
+        </p>
+      </div>
+      <div class="project-group group3">
+        <h2 class="project-name">
+          <a
+            class="project"
+            href="https://rtdk0324.github.io/weather-app/"
+            target="_blank"
+            >Movie app</a
+          >
+        </h2>
+        <a
+          class="project-github"
+          href="https://github.com/rtdk0324/movies"
+          target="_blank"
+          ><i class="fab fa-github"></i
+        ></a>
+        <ul class="project-icon-group">
+          <
+          <li><i class="devicon-html5-plain-wordmark colored"></i></li>
+          <li><i class="devicon-css3-plain-wordmark colored"></i></li>
+          <li><i class="devicon-javascript-plain colored"></i></li>
+          <li><i class="devicon-react-original-wordmark colored"></i></li>
+          />
+        </ul>
+        <p class="project-description">
+          project 3 description
+        </p>
+      </div>
+      <div class="project-group group4">
+        <h2 class="project-name">
+          <a
+            class="project"
+            href="https://rtdk0324.github.io/weather-app/"
+            target="_blank"
+            >Zun An website</a
+          >
+        </h2>
+        <a
+          class="project-github"
+          href="https://github.com/rtdk0324/zun-portfolio"
+          target="_blank"
+          ><i class="fab fa-github"></i
+        ></a>
+        <ul class="project-icon-group">
+          <
+          <li><i class="devicon-html5-plain-wordmark colored"></i></li>
+          <li><i class="devicon-css3-plain-wordmark colored"></i></li>
+          <li><i class="devicon-javascript-plain colored"></i></li>
+          <li><i class="devicon-react-original-wordmark colored"></i></li>
+          />
+        </ul>
+        <p class="project-description">
+          Portfolio website for a designer Zun An.
+        </p>
+      </div>
+    </section>
+
+    <section id="contact-section" class="section">
+      <p>
+        Hello. I'm David Kim, a self-taught front end web developer. Currently
+        located in Miami, Florida. Honestly, who doesn't work hard?. But I
+        believe to get off on the right foot is managing time wisely -
+        prioritizing from the most important to the least.
+      </p>
+      <div class="email">
+        <a href="mailto:rtdk0324@gmail.com" class="email-btn"
+          ><i class="far fa-envelope"></i>Email now</a
+        >
+      </div>
+      <h3
+        class="my-email"
+        onclick="copyEmail()"
+        data-email="rtdk0324@gmail.com"
+      >
+        rtdk0324(at)gmail(dot)com
+      </h3>
+      <p class="click-email">(click to copy)</p>
+    </section>
+
+    <!-- Main JS -->
+    <script src="js/app.js"></script>
+  </body>
+</html>

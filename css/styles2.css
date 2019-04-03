@@ -1,0 +1,242 @@
+/* screen larger than 1500px */
+@media only screen and (min-width: 1500px) {
+  .nav-dk {
+    font-size: 2.1rem;
+  }
+  #nav .nav-home {
+    font-size: 1.2rem;
+  }
+  #nav .nav-masterpieces {
+    font-size: 1.2rem;
+  }
+  #nav .nav-contact {
+    font-size: 1.2rem;
+  }
+  #main-section h1 {
+    font-size: 9rem;
+    padding-top: 37vh;
+  }
+  #main-section h1 span {
+    font-size: 10rem;
+  }
+  #main-section h2 {
+    top: 32%;
+    font-size: 1.3rem;
+  }
+  #main-section .position-a {
+    top: 65%;
+    left: 60%;
+    font-size: 1.5rem;
+  }
+  #main-section .position-b {
+    top: 70%;
+    left: 62%;
+    font-size: 1.5rem;
+  }
+  .project-name {
+    font-size: 3rem;
+  }
+  .project-description {
+    font-size: 1.5rem;
+  }
+  .project-icon-group li {
+    font-size: 2.2rem;
+  }
+}
+
+/* screen smaller than 768px (Ipad) */
+@media only screen and (max-width: 768px) {
+  #main-section h1 {
+    padding-top: 40vh;
+    font-size: 7rem;
+  }
+  #main-section h1 span {
+    font-size: 8rem;
+  }
+  #main-section h2 {
+    position: absolute;
+    top: 35%;
+    left: 25%;
+  }
+  #main-section .position-a {
+    top: 60%;
+    left: 70%;
+  }
+  #main-section .position-b {
+    top: 65%;
+    left: 72%;
+  }
+  .arrow-left {
+    position: absolute;
+    left: 5%;
+    top: 60%;
+  }
+  .arrow-right {
+    position: absolute;
+    right: 5%;
+    top: 60%;
+  }
+  .project-name {
+    margin-top: 2rem;
+  }
+  .project-icon-group {
+    margin-top: 2rem;
+  }
+  .project-description {
+    margin-top: 3rem;
+  }
+  #contact-section .my-email {
+    margin-top: 4rem;
+  }
+  .email {
+    margin-top: 5rem;
+  }
+}
+
+/* Screen smaller than 450px (phone) */
+@media only screen and (max-width: 450px) {
+  .nav-dk {
+    padding-left: 2rem;
+    color: #ffffff;
+    font-family: "IBMPlexSans-Bold";
+    font-size: 1.5rem;
+  }
+  #nav .menu-container {
+    display: inline-block;
+    text-align: right;
+    margin-top: 2.5rem;
+    transform: translateX(15rem);
+    transition: transform 0.5s ease-in;
+  }
+  #nav .menu-container.open {
+    transform: translateX(0);
+  }
+  #nav li {
+    margin-bottom: 0.7rem;
+    font-family: "IBMPlexSans-Regular";
+  }
+  #nav .hamburger-container {
+    position: absolute;
+    right: 5%;
+    display: inline-block;
+  }
+  #nav .nav-masterpieces,
+  #nav .nav-home,
+  #nav .nav-contact {
+    color: #8d8273;
+  }
+  .bar1,
+  .bar2,
+  .bar3 {
+    width: 35px;
+    height: 3px;
+    background-color: #8d8273;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  .bar2 {
+    background: #cccccc;
+  }
+  /* Rotate first bar */
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-5px, 6px);
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+  /* Fade out the second bar */
+  .change .bar2 {
+    opacity: 0;
+    transform: translateX(5rem);
+  }
+  /* Rotate last bar */
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-6px, -8px);
+    transform: rotate(45deg) translate(-6px, -8px);
+  }
+  #main-section h1 {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    padding-top: 0;
+    text-align: right;
+    font-size: 5rem;
+  }
+  #main-section h1 span {
+    font-size: 5.5rem;
+  }
+  #main-section h2 {
+    top: 30%;
+    left: 25%;
+    transform: translate(-50%, 0%);
+    font-size: 1rem;
+  }
+  #main-section h3 {
+    position: absolute;
+    transform: translate(-50%, 0%);
+    font-size: 1rem;
+    font-family: "IBMPlexSans-Regular";
+    font-weight: 600;
+    letter-spacing: 3px;
+    color: #8d8273;
+  }
+  #main-section .position-a {
+    top: 70%;
+    left: 40%;
+  }
+  #main-section .position-b {
+    top: 75%;
+    left: 50%;
+  }
+  .btn {
+    font-size: 2.3rem;
+  }
+  .project-name {
+    font-size: 1.8rem;
+  }
+  .project-icon-group li {
+    font-size: 1.5rem;
+    margin: 1rem 0.7rem;
+  }
+  .project-github {
+    font-size: 1.8rem;
+    margin-left: 1rem;
+  }
+  .project-description {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-top: 1rem;
+    padding: 0 3.5rem;
+  }
+  #contact-section p {
+    padding: 20vh 10% 0% 10%;
+    font-size: 1rem;
+    text-align: justify;
+    text-indent: 2rem;
+    /* letter-spacing: 2px; */
+    /* word-spacing: 3px; */
+    line-height: 2.2rem;
+  }
+  #contact-section .my-email {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 0;
+  }
+  #contact-section p.click-email {
+    font-size: 0.8rem;
+    text-align: center;
+  }
+  .email a {
+    font-size: 1rem;
+    font-family: "IBMPlexSans-Bold";
+    margin-top: 0rem;
+    margin-bottom: 1rem;
+    padding: 0.5rem 2.5rem 0.5rem 1.5rem;
+  }
+
+  .email a i {
+    color: tomato;
+    margin-right: 1rem;
+    font-size: 1.3rem;
+  }
+}
